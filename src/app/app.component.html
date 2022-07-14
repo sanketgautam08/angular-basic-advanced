@@ -1,1 +1,16 @@
 <h1>HomePage</h1>
+
+<button (click)="onButtonClick()">Click To Change Content</button>
+
+<div *ngIf="pressed === true; else elseBlock">
+  <h3>
+    You Clicked the Button. Click the button again to do something different
+  </h3>
+</div>
+<ng-template #elseBlock>
+  <div>
+    <form>
+      <input type="text" placeholder="Enter Anything" />
+    </form>
+  </div>
+</ng-template>

@@ -13,6 +13,10 @@
   <div>
     <form>
       <input type="text" placeholder="Enter Anything" />
+      <button type="submit" (click)="onSubmitClick()">Submit</button>
     </form>
   </div>
 </ng-template>
+<div *ngIf="submitted">
+  <h4>Submit Clicked!!!!!!</h4>
+</div>

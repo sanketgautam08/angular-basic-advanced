@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-beginner-to-advanced';
   pressed: boolean = false;
+  submitted: boolean = false;
 
   onButtonClick() {
     if (this.pressed === true) {
@@ -16,5 +17,9 @@ export class AppComponent {
       this.pressed = true;
     }
     console.log(this.pressed);
+  }
+
+  onSubmitClick() {
+    this.submitted = true;
   }
 }
